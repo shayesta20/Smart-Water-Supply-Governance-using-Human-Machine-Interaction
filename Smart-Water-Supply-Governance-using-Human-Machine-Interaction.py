@@ -7,7 +7,6 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 import time, math
 
-# ── Constants ─────────────────────────────────
 TANK_HEIGHT    = 10.0
 OVERFLOW_LEVEL = 9.8
 CRITICAL_LOW   = 1.0
@@ -19,7 +18,6 @@ TAP_RATE       = 0.05
 SECRETARY_PASS = "secretary123"
 VILLA_NAMES    = [f"Villa {i}" for i in range(1, 7)]
 
-# ── Colour Palette ─────────────────────────────
 C = {
     "app_bg"      : "#F0F4F8",
     "sidebar_bg"  : "#1B3A5C",
@@ -386,7 +384,6 @@ class WaterMonitorApp:
     def _sdiv(self, p):
         tk.Frame(p, bg="#243E5A", height=1).pack(fill="x", padx=14, pady=6)
 
-    # ── MAIN CONTENT ──────────────────────────
     def _build_main(self, main):
         # Top bar
         topbar = tk.Frame(main, bg=C["card"], height=56)
